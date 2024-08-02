@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home IoT Devices Security Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: olive;
+            color: rgba(255, 255, 255, 0.538);
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+            border: #4cadaf;
+            box-sizing: border-box;
+            box-shadow: peru;
+        }
+        .header h1 {
+            margin: 20;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .content {
+            padding: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4cadaf;
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color:#45a09b;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a09b;
+        }
+        .form-container {
+            margin: 20px 0;
+        }
+        .form-container input, .form-container select {
+            padding: 10px;
+            width: calc(100% - 22px);
+            margin: 10px 0;
+            border: 1px solid #ccccccfb;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Secure Your Home IoT Devices</h1>
+        <p>Free Services for the Community</p>
+    </div>
+    <div class="content">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Router Security Settings</td>
+                        <td>Help change default passwords and update router software.</td>
+                    </tr>
+                    <tr>
+                        <td>Network Segmentation</td>
+                        <td>Set up separate Wi-Fi networks for IoT devices.</td>
+                    </tr>
+                    <tr>
+                        <td>Device Management</td>
+                        <td>Assist with using password managers and enabling two-factor authentication.</td>
+                    </tr>
+                    <tr>
+                        <td>Network Monitoring</td>
+                        <td>Monitor home network traffic for suspicious activity.</td>
+                    </tr>
+                    <tr>
+                        <td>Security Software</td>
+                        <td>Install free antivirus and firewall software on your devices.</td>
+                    </tr>
+                    <tr>
+                        <td>Education and Awareness</td>
+                        <td>Offer workshops and online resources about IoT security best practices.</td>
+                    </tr>
+                    <tr>
+                        <td>Vulnerability Scanning</td>
+                        <td>Check your devices for known security weaknesses.</td>
+                    </tr>
+                    <tr>
+                        <td>Secure Configuration</td>
+                        <td>Provide guides and tips for securing your IoT devices.</td>
+                    </tr>
+                    <tr>
+                        <td>Public Awareness Campaigns</td>
+                        <td>Share information about IoT security through social media and local media.</td>
+                    </tr>
+                    <tr>
+                        <td>Community Support Groups</td>
+                        <td>Create forums and organize meetups to discuss IoT security.</td>
+                    </tr>
+                    <tr>
+                        <td>Parental Controls</td>
+                        <td>Set up software to protect children from inappropriate content and security risks.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Service Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Appointment Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td><a href="#appointment-form" class="btn">Book Monday Appointment</a></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td><a href="#appointment-form" class="btn">Book Wednesday Appointment</a></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td><a href="#appointment-form" class="btn">Book Friday Appointment</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Schedule an Appointment</h2>
+        <div class="form-container" id="appointment-form">
+            <form action="submit_appointment.php" method="POST">
+                <label for="appointment-date">Pick a Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                
+                <label for="appointment-time">Pick a Time:</label>
+                <select id="appointment-time" name="appointment-time" required>
+                    <option value="6:00 PM - 7:00 PM">6:00 PM - 7:00 PM</option>
+                </select>
+
+                <label for="service-type">Type of Service:</label>
+                <select id="service-type" name="service-type" required>
+                    <option value="Router Security Settings">Router Security Settings</option>
+                    <option value="Network Segmentation">Network Segmentation</option>
+                    <option value="Device Management">Device Management</option>
+                    <option value="Network Monitoring">Network Monitoring</option>
+                    <option value="Security Software">Security Software</option>
+                    <option value="Education and Awareness">Education and Awareness</option>
+                    <option value="Vulnerability Scanning">Vulnerability Scanning</option>
+                    <option value="Secure Configuration">Secure Configuration</option>
+                    <option value="Public Awareness Campaigns">Public Awareness Campaigns</option>
+                    <option value="Community Support Groups">Community Support Groups</option>
+                    <option value="Parental Controls">Parental Controls</option>
+                </select>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit" class="btn">Confirm Appointment</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
